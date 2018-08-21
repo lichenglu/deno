@@ -62,7 +62,7 @@ export function codeCache(
   sourceCode: string,
   outputCode: string
 ): void {
-  util.log("os.ts codeCache", filename, sourceCode, outputCode);
+  util.log("os.ts codeCache", filename);
   const builder = new flatbuffers.Builder();
   const filename_ = builder.createString(filename);
   const sourceCode_ = builder.createString(sourceCode);
